@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(30deg,rgb(175, 45, 179) 0%, rgb(83, 124, 237) 100%);
+    font-family: "Mitr", sans-serif;
+}
+legend {
+    color: aliceblue;
+    background-color: rgb(93, 123, 150);
+}
+fieldset {
+    background-color: aliceblue;
+    margin: 0 10rem 0 10rem;
+    border-style: hidden;
+    border-radius: 0.4rem;
+}
+#container {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#layer {
+    background-color: aliceblue;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.maroon{
+    background-color: maroon; 
+}
+.lightgreen{
+    background-color: lightgreen; 
+}
+
+.magenta{
+    background-color: magenta; 
+}

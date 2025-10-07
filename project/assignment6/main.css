@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(30deg,rgba(45, 98, 179, 1) 0%, rgba(83, 183, 237, 1) 100%);
+    font-family: "Mitr", sans-serif;
+}
+
+#myRegister, #myLogin {
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+input
+{
+    margin: 0.5rem;
+}
+.btn
+{
+    justify-self: center;
+}
+.btn > input
+{
+    padding:  0.6rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-radius: 10rem;
+}
