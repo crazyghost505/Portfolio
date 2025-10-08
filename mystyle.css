@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 100vh;
     /* min-height: 100vh; */
@@ -14,7 +14,17 @@ body {
     font-weight: 200;
     font-size: 1.5rem;
 }
+.body2 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 h1, h2 {
+    color: aliceblue;
     margin: 0;
     padding: auto;
 }
@@ -76,7 +86,7 @@ nav {
 }
 p {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 200;
 }
 .port {
     margin: 1rem;
@@ -133,4 +143,45 @@ p {
 }
 a {
     color: rgb(149, 206, 255);
+}
+.container {
+    width: 90vw;
+}
+.project_container {
+    margin-top: 1rem;
+    display: grid;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: aliceblue; */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.project_box {
+    background-color: rgb(240, 248, 255);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    /* border:solid #7e9eff; */
+    box-shadow: 0 0 0.4rem 0 black;
+}
+.project_topic {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.topic {
+    grid-column: 1/ span 2;
+    text-align: center;
+}
+#Tso {
+    grid-column: 1/ span 1;
+}
+#Pizzadip {
+    grid-column: 2/ span 1;
+}
+.projectbtn {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 100rem;
+    border: none;
+    background-color: #383e6d;
+    color: aliceblue;
 }
