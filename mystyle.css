@@ -27,6 +27,7 @@ h1, h2 {
     color: aliceblue;
     margin: 0;
     padding: auto;
+    font-weight: 400;
 }
 img {
     border-color: rgb(43, 43, 43);
@@ -145,7 +146,7 @@ a {
     color: rgb(149, 206, 255);
 }
 .container {
-    width: 90vw;
+    width: 60vw;
 }
 .project_container {
     margin-top: 1rem;
@@ -155,6 +156,7 @@ a {
     /* background-color: aliceblue; */
     padding: 1rem;
     border-radius: 1rem;
+    grid-template-columns: 50% 50%;
 }
 .project_box {
     background-color: rgb(240, 248, 255);
@@ -163,6 +165,9 @@ a {
     padding: 1.5rem;
     /* border:solid #7e9eff; */
     box-shadow: 0 0 0.4rem 0 black;
+}
+.project_box p {
+    font-size: 1rem;
 }
 .project_topic {
     font-size: 1.5rem;
@@ -179,9 +184,39 @@ a {
     grid-column: 2/ span 1;
 }
 .projectbtn {
+    box-sizing: border-box;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 100rem;
-    border: none;
+    border: solid 0.2rem aliceblue;
     background-color: #383e6d;
     color: aliceblue;
+}
+.projectbtn:hover {
+    background-color: rgba(255,255,255,0);
+    color: #383e6d;
+    border: solid 0.2rem #383e6d;
+}
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90vw;
+        display: grid;
+    }
+    .topic {
+        grid-column: 1/ span 2;
+        text-align: center;
+    }
+    #Tso {
+        grid-column: 1/ span 2;
+    }
+    #Pizzadip {
+        grid-column: 1/ span 2;
+    }
+    .project_box {
+        grid-column: 1/ span 2;
+    }
 }

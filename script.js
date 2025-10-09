@@ -45,7 +45,7 @@ function PosLink()
 }
 function LogLink()
 {
-    window.location.href = "project/assignment6/login.html";
+    window.location.href = "project/assignment6/register.html";
 }
 function BoxLink()
 {
