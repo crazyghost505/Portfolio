@@ -196,6 +196,32 @@ a {
     color: #383e6d;
     border: solid 0.2rem #383e6d;
 }
+iframe {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+.flexvdo {
+    width: 100%;
+}
+.project_box2 {
+    background-color: rgb(240, 248, 255);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 0.4rem 0 black;
+    grid-column: 1/ span 2;
+}
+.project_box2 > h1{
+    color: black;
+    justify-self: center;
+}
+.project_pic{
+    justify-self: center;
+}
+.project_pic > img {
+    border-radius: 0;
+}
 @media only screen and (max-width: 1024px) {
     .container {
         width: 90vw;

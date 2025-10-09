@@ -22,6 +22,7 @@ function projectbtnClick()
     document.getElementById("Logbtn").onclick = LogLink;
     document.getElementById("Boxbtn").onclick = BoxLink;
     document.getElementById("Ajabtn").onclick = AjaLink;
+    document.getElementById("figmaIbs").onclick = IbisLink;
 }
 function facebookLink()
 {
@@ -54,5 +55,9 @@ function BoxLink()
 function AjaLink()
 {
     window.location.href = "project/assignment8/index.html";
+}
+function IbisLink()
+{
+    window.location.href = "https://www.figma.com/proto/ILHw7Ii5DtC5tRITi0dvNh/ibispaint-prototype?node-id=0-1&t=Kdvlt5dE1APC9wgQ-1";
 }
 
