@@ -15,11 +15,12 @@ body {
 .body2 {
     width: 100%;
     margin: 0;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 h1, h2 {
     color: aliceblue;
@@ -80,6 +81,7 @@ li::marker {
     justify-content: center;
 }
 .infomation {
+    align-content: center;
     grid-column: 2/ span 1;
 }
 p {
@@ -100,21 +102,25 @@ p {
     grid-column: 2/ span 1;
     display: block;
     margin: 0;
+    align-content: baseline;
     border-radius: 1rem;
     color: aliceblue;
     width: 80%;
 }
 .contact {
-    margin: 1rem;
+    /* margin: 1rem; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
 }
-#fbbtn {
+.Contactbtn
+{
     font-size: 1.5rem;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+}
+#fbbtn {
     background-color: rgba(255,255,255,0);
     color: #7e9eff;
     border-style: solid;
@@ -126,9 +132,6 @@ p {
     border-style: solid;
 }
 #ytbtn {
-    font-size: 1.5rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
     background-color: rgba(255,255,255,0);
     color: #dc3545;
     border-style: solid;
@@ -140,9 +143,6 @@ p {
     border-style: solid;
 }
 #ghbtn {
-    font-size: 1.5rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
     background-color: rgba(255,255,255,0);
     color: #ffffff;
     border-style: solid;
@@ -153,11 +153,61 @@ p {
     color: rgb(49, 61, 71);
     border-style: solid;
 }
+.body3 {
+    margin-top: 1rem;
+    width: 80%;
+}
+.aboutmeinfo{
+    text-align: center;
+    margin-top: 1rem;
+    /* background-color: rgb(184, 202, 219); */
+}
+.aboutme_item_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutme_item {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme_item img{
+    width: 8rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+#hobbies_container {
+    /* background-color: aliceblue; */
+    color: #383e6d;
+    border-radius: 1rem;
+}
+#hobbies_topic h2 {
+    /* color: #383e6d; */
+}
+#hobbies {
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+#hobbies img{
+    width: 50rem;
+    max-width: 80%;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+#hobbies p {
+    max-width: 80%;
+}
+#hobbies_item {
+    color: #383e6d;
+}
 a {
     color: rgb(149, 206, 255);
 }
 .container {
     width: 60vw;
+    margin-top: 2.5rem;
 }
 .project_container {
     display: grid;
@@ -194,9 +244,32 @@ a {
     color: aliceblue;
 }
 .top {
-    padding: 0;
-    size: 100rem;
-    background-color: rgb(240, 248, 255, 0);
+    position: fixed;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    color: aliceblue;
+    width: 100%;
+    background: linear-gradient(30deg,rgb(36, 33, 49) 0%, rgb(76, 123, 151, 0) 100%);
+    justify-content: space-around;
+}
+.top a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: linear 0.3s;
+}
+.top a:hover {
+    transform: scale(1.2);
+}
+.left-flex {
+    display: flex;
+    width: 50rem;
+    justify-content: space-around;
+}
+.right-flex {
+    display: flex;
+    width: 50rem;
+    justify-content: space-around;
 }
 .topic h1 {
     display: flex;
@@ -288,6 +361,9 @@ iframe {
         height: auto;
         justify-content: baseline;
     }
+    .top {
+        visibility: collapse;
+    }
     .infomation {
         text-align: center;
     }
@@ -326,6 +402,12 @@ iframe {
     .container {
         width: 100vw;
         display: grid;
+    }
+    #mastery_inner {
+        flex-direction: column;
+    }
+    #interest_inner {
+        flex-direction: column;
     }
     .topic {
         grid-column: 1/ span 2;

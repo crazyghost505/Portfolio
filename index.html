@@ -8,10 +8,17 @@
         <script src='indexscript.js'></script>
     </head>
     <body>
-        <!-- <div class="top">
-            <p>contact</p>
-        </div> -->
-        <div class="body2">
+        <div class="top">
+            <div class="left-flex">
+                <div class="home"><a href="#home">HOME</a></div>
+                <div class="aboutMe"><a href="#aboutMe_content">ABOUT ME</a></div>
+            </div>
+            <div class="left-flex">
+                <div class="myProject"><a href="project.html">PROJECT</a></div>
+                <div class="contactnav"><a href="#contactbottom">CONTACT</a></div>
+            </div>
+        </div>
+        <div class="body2" id="home">
             
             <div class = "card">
                 <div class="pic">
@@ -25,24 +32,6 @@
                 <h2>Thanyakorn Chokegreangkrai</h2>
             </div>
             <div class = "list">
-            <ul>
-                <li class="head">งานอดิเรก
-                    <ul>
-                        <li>วาดรูป</li>
-                        <li>ฟังเพลง</li>
-                    </ul>
-              </li>
-             <li class="head">ทักษะ ความสามารถ
-                    <ul>
-                       <li>การคำนวน</li>
-                   </ul>
-               </li>
-               <li class="head">ความสนใจ
-                  <ul>
-                     <li>การจับจังหวะ ร้องเพลง</li>
-                 </ul>
-               </li>
-            </ul>
                <div class="contact">
                     <button type="button" class="Contactbtn" id="fbbtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -69,7 +58,79 @@
             <a href = "project.html">Previous Project &#10148;</a>       
         </div>
     </div>
-    <div class="bottom">
+    <div class="body3" id="aboutMe">
+        <div class="aboutme_container" id = "aboutMe_content">
+            <div class="topic">
+                <h1>About Me</h1>
+            </div>
+            <div class="aboutmeinfo" id = "mastery">
+                <div class="aboutme_topic">
+                    <h2>Mastery</h2>
+                </div>
+                <div class="aboutme_item_container" id = "mastery_inner">
+                    <div class="aboutme_item">
+                        <img src="pic\Adobe_Photoshop_CC_icon.png" alt="">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                    <div class="aboutme_item">
+                        <img src="pic\figmalogo.jpg" alt="">
+                        <p>Figma</p>
+                    </div>
+                    <div class="aboutme_item">
+                        <img src="pic\Visual_Studio_Code_1.35_icon.png" alt="">
+                        <p>VS code studio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutmeinfo" id ="hobbies_container">
+                <div class="aboutme_topic" id="hobbies_topic">
+                    <h2>Hobbies</h2>
+                </div>
+                <div class="aboutme_item_container" id="hobbies">
+                    <div class="aboutme_item" id ="hobbies_item">
+                        <img src="pic\yt.png" alt="">
+                        <div class="project_topic"><div class="prop"></div>Youtube Channel ผีบ้า (@crazyghost505)</div>
+                        <p>เวลาว่างผมมักจะอัดวิดีโอ หรือไลฟ์สดเกมที่ตัวเองเล่นบนช่องทาง youtube ช่อง ผีบ้า
+                            โดยองค์ประกอบทั้งหมดของช่องตัวผมทำขึ้นมาเองทั้งหมด ทั้ง Thumbnail, ตารางเวลา, ออกกล้อง, Script หรือ Entertain
+                        </p>
+                        <img src="pic\obspanel.png" alt="">
+                        <div class="project_topic"><div class="prop"></div>Video Recording and Live Streaming</div>
+                        <p>
+                            การถ่ายทำทั้งอัดวิดีโอ หรือ ไลฟ์สด ทำด้วยโปรแกรม Obs ทั้งหมด
+                        </p>
+                        <img src="pic\psthumbnail.png" alt="">
+                        <div class="project_topic"><div class="prop"></div>Video Thumbnail</div>
+                        <p>
+                            การตัดต่อกราฟฟิกต่างๆภายในช่อง โดยเฉพาะหน้าปกวิดิโอ ถูกทำในโปรแกรม Adobe Photoshop ทั้งหมด
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="aboutmeinfo" id = "mastery">
+                    <div class="aboutme_topic">
+                        <h2>สิ่งที่สนใจและกำลังศึกษา</h2>
+                    </div>
+                    <div class="aboutme_item_container" id="interest_inner">
+                        <div class="aboutme_item">
+                            <img src="pic\sql.png" alt="">
+                            <p>SQL</p>
+                        </div>
+                        <div class="aboutme_item">
+                            <img src="pic\iot.png" alt="">
+                            <p>Internet of things</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+
+
+        </div>
+    </div>
+    <div class="bottom" id="contactbottom">
         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
         <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
         <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
